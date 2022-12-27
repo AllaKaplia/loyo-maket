@@ -4,91 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>loyo</title>
 </head>
 <body>
     <header class="page-header">
-        <a href="./index.html" class="logo"> <img src="./images/logo.png" alt="logo"></a>
-        <nav>
-            <ul class="style-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blogs</a></li>
-            </ul>
-        </nav>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Gift Finder</a>
+        <div class="header-container container">
+            <a href="#" class="logo">
+                <svg class="logo-loyo" width="41" height="39">
+                    <use href="./images/icons.svg#icon-logo"></use>
+                </svg>
+            </a>
+           
+            <nav class="style-nav">
+                <ul class="nav-list list">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blogs</a>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="nav-button">GIFT FINDER</button>
+        </div>
+        
     </header>
 
     <main>
         <section class="hero">
-            <h1>Find a gift for your wife or girlfriend</h1>
-            <p>Struggling to find a gift for your wife or girlfriend? No problem!</p>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Find gift now</a>
-            <img src="./images/photo-hero.jpg" alt="Man and woman" width="720" height="700">
+            <div class="container">
+                <h1 class="hero-title">Acquaintance with the peculiarities of cooperation</h1>
+                <ul class="hero-list">
+                    <li class="hero-item">
+                        <div class="hero-content">
+                            <h2 class="hero-subtitle">Find a gift for your wife or girlfriend</h2>
+                            <p class="hero-text">Struggling to find a gift for your wife or girlfriend? No problem!</p>
+                            <button type="button" class="hero-button-one">FIND GIFT NOW</button>
+                        </div>
+                        <img class="hero-img" src="./images/photo-hero.jpg" alt="Man and woman" width="719" height="700">
+                    </li>
+                    <li class="hero-item">
+                        <img class="hero-img" src="./images/photo-media.jpg" alt="Thanks" width="721" height="600">
+                        <div class="hero-content">
+                            <h2 class="hero-subtitle">How we work</h2>
+                            <p class="hero-text">We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</p>
+                            <button type="button" class="hero-button">LEARN MORE</button>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <h2>How we work</h2>
-            <p>We’ve actually already asked hundreds of women what they want, and made a database with the results. All you have to do is take our short survey that only takes seconds, and our proprietary algorithm will match you with a few perfect gift options.</p>
-            <a href="http://" target="_blank" rel="noopener noreferrer">Learn More</a>
-            <img src="./images/photo-media.jpg" alt="Thanks" width="720" height="700">
-        </section>
-
-        <section>
-            <h2>Gifts for all Occasions</h2>
-            <p>“Try our web app to find the best gifts for all occasions”</p>
-            <ul>
-                <li>
-                    <img src="./images/poto-happy-1.jpg" alt="Happy Birthday" width="270" height="270">
-                    <h3>Birthday</h3>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">See More &gt;</a>
+        <section class="gallery section">
+            <h2 class="gallery-title">Gifts for all Occasions</h2>
+            <p class="gallery-text">“Try our web app to find the best gifts for all occasions”</p>
+            <ul class="gallery-list">
+                <li class="gallery-item">
+                    <a href="#" class="gallery-link">
+                        <img src="./images/poto-happy-1.jpg" alt="Happy Birthday" width="270" height="270">
+                        <h3 class="gallery-subtitle">Birthday</h3>
+                        <p class="gallery-button">See More &gt;</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/poto-happy-2.jpg" alt="Anniversary" width="270" height="270">
-                    <h3>Anniversary</h3>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">See More &gt;</a>
+                <li class="gallery-item">
+                    <a href="" class="gallery-link">
+                        <img src="./images/poto-happy-2.jpg" alt="Anniversary" width="270" height="270">
+                        <h3 class="gallery-subtitle">Anniversary</h3>
+                        <p class="gallery-button">See More &gt;</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/poto-happy-3.jpg" alt="Valentine's Day" width="270" height="270">
-                    <h3>Valentine's Day</h3>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">See More &gt;</a>
+                <li class="gallery-item">
+                    <a href="" class="gallery-link">
+                        <img src="./images/poto-happy-3.jpg" alt="Valentine's Day" width="270" height="270">
+                        <h3 class="gallery-subtitle">Valentine's Day</h3>
+                        <p class="gallery-button">See More &gt;</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="./images/poto-happy-4.jpg" alt="Christmas" width="270" height="270">
-                    <h3>Christmas</h3>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">See More &gt;</a>
+                <li class="gallery-item">
+                    <a href="" class="gallery-link">
+                        <img src="./images/poto-happy-4.jpg" alt="Christmas" width="270" height="270">
+                        <h3 class="gallery-subtitle">Christmas</h3>
+                        <p class="gallery-button">See More &gt;</p>
+                    </a>
                 </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Ready to get started? <br/> Sign up or contact us</h2>
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">Find gift now</a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer">How it works</a></li>
+        <section class="communication section">
+            <h2 class="communication-title">Ready to get started? Sign up or contact us</h2>
+            <ul class="communication-list">
+                <li>
+                    <button type="button" class="communication-button">Find gift now</button>
+                </li>
+                <li>
+                    <button type="button" class="communication-button">How it works</button>
+                </li>
             </ul>
         </section>
 
-        <section>
-            <h2>Our Best Blogs Ever</h2>
-            <p>“Try our blog to find the best tips and tricks to select your gift”</p>
+        <section class="blog section">
+            <h2 class="blog-title">Our Best Blogs Ever</h2>
+            <p class="blog-description">“Try our blog to find the best tips and tricks to select your gift”</p>
             <img src="./images/photo-wedding.jpg" alt="Wedding" width="400" height="370">
-            <h3>Mr. John Doe</h3>
-            <p>The best way to wish your wife</p>
+            <h3 class="blog-subtitle">Mr. John Doe</h3>
+            <p class="blog-text">The best way to wish your wife</p>
             <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
-            <ul>
-                <li>
-                    <h4>Database to find the gifts for your girlfriend</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
+            <ul class="blog-list">
+                <li class="blog-card">
+                    <a href="" target="_blank" rel="noopener noreferrer" class="blog-link">
+                        <h3 class="blog-subtitle">Database to find the gifts for your girlfriend</h3>
+                        <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                        <p class="blog-button">Read More</p>
+                    </a>
                 </li>
-                <li>
-                    <h4>How Artificial Intelligence read your mind to find the best gift</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">Read More</a>
+                <li class="blog-card">
+                    <a href="" target="_blank" rel="noopener noreferrer" class="blog-link">
+                        <h3 class="blog-subtitle">How Artificial Intelligence read your mind to find the best gift</h3>
+                        <p class="blog-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore...</p>
+                        <p class="blog-button">Read More</p>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -99,20 +143,55 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About Us</a></li>
         </ul>
-        <a href="#"> <img src="./images/logo-orange.png" alt="Logo orange"></a>
+        <a href="#" class="logo-fotter">
+            <svg class="logo-loyo" width="41" height="39">
+                <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+        </a>
         <ul>
             <li><a href="#">Services</a></li>
             <li><a href="#">Blogs</a></li>  
         </ul>
-        <ul>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">YouTube</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+        <ul class="footer-social">
+            <li class="footer-list">
+                <a href="" class="footer-link">
+                    <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-facebook" width="38.4" height="38.4"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-list">
+                <a href="" class="footer-link">
+                    <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-twitter" width="38.4" height="38.4"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-list">
+                <a href="" class="footer-link">
+                    <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-instagram" width="38.4" height="38.4"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-list">
+                <a href="" class="footer-link">
+                    <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-youtube" width="38.4" height="38.4"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="footer-list">
+                <a href="" class="footer-link">
+                    <svg class="social-icon">
+                        <use href="./images/icons.svg#icon-pinterest" width="38.4" height="38.4"></use>
+                    </svg>
+                </a>
+            </li>
         </ul>
-        <p>&#169; 2010 — 2020</p>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Privacy — Terms</a>
+
+        <p class="footer-years">&#169; 2010 — 2020</p>
+        <p class="footer-text">Privacy — Terms</p>
     </footer>
 </body>
 </html>
