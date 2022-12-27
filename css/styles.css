@@ -23,6 +23,7 @@
 
 .body {
     font-family: 'Blinker', sans-serif;
+    letter-spacing: 0.02em;
     background-color: var(--main-background-color);
     color: var(--accent-text-color);
 }
@@ -100,7 +101,6 @@ img {
     font-size: 18px;
     line-height: 1.22;
     text-decoration: none;
-    letter-spacing: 0.02em;
     color: var(--accent-text-color);
 
     transition: color 250ms var(--timing-function);
@@ -120,7 +120,6 @@ img {
 
     font-size: 18px;
     line-height: 1.22;
-    letter-spacing: 0.02em;
     color: var(--accent-color);
     cursor: pointer;
     background-color: var(--color-footer);
@@ -185,7 +184,6 @@ img {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.23;
-    letter-spacing: 0.02em;
 }
 
 .hero-text{
@@ -193,7 +191,6 @@ img {
 
     font-size: 20px;
     line-height: 1.4;
-    letter-spacing: 0.02em;
 }
 
 .hero-button-one {
@@ -205,7 +202,6 @@ img {
 
     font-size: 18px;
     line-height: 1.22;
-    letter-spacing: 0.02em;
     color: var(--main-background-color);
     background-color: #F7941E;
 
@@ -266,7 +262,6 @@ img {
     font-weight: 600;
     font-size: 32px;
     line-height: 1.18;
-    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -283,14 +278,12 @@ img {
 
     font-size: 20px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--accent-text-color);
 }
 
 .gallery-button {
     font-size: 14px;
     line-height: 1.32;
-    letter-spacing: 0.02em;
     color: var(--accent-text-color);
 }
 
@@ -315,14 +308,12 @@ img {
     font-weight: 700;
     font-size: 32px;
     line-height: 1.4;
-    letter-spacing: 0.02em;
 }
 
 .communication-title {
     font-weight: 400;
     font-size: 32px;
     line-height: 1.4;
-    letter-spacing: 0.02em;
 }
 
 .communication-list {
@@ -335,7 +326,6 @@ img {
 
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: 0.02em;
     cursor: pointer;
     border-radius: 5px;
     border: transparent;
@@ -378,7 +368,6 @@ img {
 
     font-size: 32px;
     line-height: 1.8;
-    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -387,7 +376,6 @@ img {
 
     font-size: 18px;
     line-height: 1.33;
-    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -411,7 +399,6 @@ img {
 
     font-size: 14px;
     line-height: 1.42;
-    letter-spacing: 0.02em;
     color: var(--main-background-color);
 }
 
@@ -420,11 +407,10 @@ img {
     font-weight: 600;
     font-size: 48px;
     line-height: 1.2;
-    letter-spacing: 0.02em;
     color: var(--main-background-color);
 }
 
-.blog-box-link {
+.blog-box-link, .blog-button {
     font-size: 18px;
     line-height: 1.38;
     letter-spacing: 0.02em;
@@ -432,7 +418,52 @@ img {
     color: var(--main-background-color);
 }
 
-.blog-list 
+.blog-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-left: 135px;
+    margin-right: 135px;
+    list-style: none;
+}
 
-.blog-link
+.blog-card {
+    padding: 48px;
 
+    transition: box-shadow 250ms var(--timing-function);
+}
+
+.blog-card:hover, .blog-card:focus,
+.blog-card:active {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.blog-list> .blog-card {
+    width: calc((100% - 30px) / 2);
+}
+
+.blog-link {
+    text-decoration: none;
+}
+
+.blog-subtitle-card {
+    margin-bottom: 16px;
+
+    font-size: 24px;
+    line-height: 1.47;
+    color: var(--accent-text-color);
+}
+
+.blog-text-card {
+    margin-bottom: 16px;
+
+    font-size: 18px;
+    line-height: 1.38;
+    color: var(--accent-text-color);
+}
+
+.blog-button-card {
+    font-size: 14px;
+    line-height: 1.42;
+    color: var(--accent-text-color);
+}
